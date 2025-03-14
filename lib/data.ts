@@ -62,7 +62,7 @@ export const EXPERIENCES = [
     Project: "Capstone Project - ServeEase",
     img: dayforceImg,
     imgSize: "lg",
-    date: "September 2025 - Present",
+    date: "September 2024 - Present",
     location: "Toronto, Ontario, Canada",
     responsibilities: [],
   },
