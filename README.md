@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deep Patel - Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Google SMTP](https://img.shields.io/badge/Google_SMTP-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 
-First, run the development server:
+## 🚀 Live Deployment
+Check out my portfolio live at: [https://deeppatel91.netlify.app/](https://deeppatel91.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👋 About Me
+Hello, I'm **Deep Patel**, a passionate **Full-Stack Developer** with an Advanced Diploma in Computer Programming and Analysis from George Brown College. I specialize in building scalable, user-centric web applications using modern technologies. My portfolio showcases my skills, projects, and experiences in the tech world.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠️ Technologies Used
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Deployment**: Netlify
+- **Contact Form**: Google SMTP
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌟 Key Features
+- **Responsive Design**: Built with Tailwind CSS for a seamless experience across devices.
+- **Contact Form**: Integrated with Google SMTP for reliable email communication.
+- **Modern Stack**: Leveraging Next.js for server-side rendering and performance optimization.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📂 Projects Highlight
+Here are some of the projects I've worked on:
+- **ServeEase**: A React Native marketplace app for real-time booking and tracking.
+- **DSA Python Game**: A Pygame-based visualization tool for pathfinding algorithms.
+- **Library Room Management System**: A Spring Boot microservices application for library room reservations.
+- **GBC Travel**: A comprehensive travel platform built with ASP.NET Core MVC.
+- **Employee Management System**: A MERN stack application for managing employee data.
+- **CHATAPP**: A real-time chat application using Socket.io and MERN stack.
+- **Weather App**: A ReactJS-based weather application fetching real-time data.
+- **Inventory Management System**: A Spring Boot and Java-based microservices application.
+- **Personal Portfolio**: This portfolio website built with Next.js and Tailwind CSS.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact Me
+Feel free to reach out to me for collaborations or just a friendly chat!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Email**: [deeppatel9171@gmail.com](mailto:deeppatel9171@gmail.com)
+- **LinkedIn**: [Deep Patel](https://www.linkedin.com/in/deeppatel91)
+- **GitHub**: [Deeppatel91](https://github.com/Deeppatel91)
+
+---
+
+© Deep Patel, 2025
