@@ -1,3 +1,2 @@
-[build]
-  command = "next build"
-  publish = ".next"
+[build.environment]
+  NODE_VERSION = "18" # or the version your project uses
