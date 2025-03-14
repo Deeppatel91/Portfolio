@@ -11,9 +11,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email and message are required." }, { status: 400 });
     }
 
-    // Configure Nodemailer transport
     const transporter = nodemailer.createTransport({
       service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true, // Use SSL
       auth: {
         user: process.env.MY_EMAIL,
         pass: process.env.MY_PASSWORD,
