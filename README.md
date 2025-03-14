@@ -48,7 +48,7 @@ Here are some of the projects I've worked on:
 Feel free to reach out to me for collaborations or just a friendly chat!
 
 - **Email**: [deeppatel9171@gmail.com](mailto:deeppatel9171@gmail.com)
-- **LinkedIn**: [Deep Patel]([https://www.linkedin.com/in/deeppatel91](https://www.linkedin.com/in/deep-patel-a7181520b/))
+- **LinkedIn**: [Deep Patel](https://www.linkedin.com/in/deep-patel-a7181520b/)
 - **GitHub**: [Deeppatel91](https://github.com/Deeppatel91)
 
 ---
