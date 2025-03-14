@@ -11,8 +11,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email and message are required." }, { status: 400 });
     }
 
-    // Nodemailer transport setup
-    const transport = nodemailer.createTransport({
+    // Configure Nodemailer transport
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: process.env.MY_EMAIL,
@@ -20,11 +20,11 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // HTML email content
+    // Email HTML template
     const emailHTML = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-        <h2 style="color: #333; text-align: center;">📩 Contact Form Message</h2>
-        <p style="font-size: 16px; color: #555;"><strong>Sender:</strong> ${email}</p>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+        <h2 style="color: #333; text-align: center;">📩 New Contact Form Message</h2>
+        <p style="font-size: 16px; color: #555;"><strong>From:</strong> ${email}</p>
         <p style="font-size: 16px; color: #555;"><strong>Message:</strong></p>
         <blockquote style="font-style: italic; color: #666; padding-left: 10px; border-left: 3px solid #007BFF;">
           ${message}
@@ -36,23 +36,21 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
+    // Mail options
     const mailOptions: Mail.Options = {
       from: process.env.MY_EMAIL,
       to: process.env.MY_EMAIL,
-      subject: `Message from ${email}`,
-      text: `Sender: ${email}\n\nMessage:\n${message}`,
-      html: emailHTML, // HTML email content
+      subject: `New Message from ${email}`,
+      text: `From: ${email}\n\nMessage:\n${message}`,
+      html: emailHTML,
     };
 
     // Send email
-    await transport.sendMail(mailOptions);
-
-    // Close transport (optional but good practice)
-    transport.close();
+    await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: "Email sent successfully!" });
-  } catch (err) {
-    console.error("Error sending email:", err);
+  } catch (error) {
+    console.error("Error sending email:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
