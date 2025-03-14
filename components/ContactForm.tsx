@@ -53,7 +53,7 @@ export const ContactForm = () => {
       body: JSON.stringify(values),
     })
       .then((res) => res.json())
-      .then((response) => {
+      .then(() => {
         form.reset();
         toast({
           title: "Message sent successfully.",
@@ -78,19 +78,23 @@ export const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 md:w-[500px]"
+        className="space-y-6 w-full md:w-[500px] bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-600 shadow-lg px-8 py-6 rounded-xl"
       >
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="text-lg font-semibold">Email</FormLabel>
               <FormControl>
-                <Input placeholder="Your email" {...field} />
+                <Input
+                  placeholder="Your email"
+                  {...field}
+                  className="h-12 px-4 rounded-md border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                />
               </FormControl>
-              <FormDescription>
-                This is the email I&#39;ll use to get back to you
+              <FormDescription className="text-gray-600 dark:text-gray-400">
+                This is the email I'll use to get back to you.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -101,24 +105,32 @@ export const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="text-lg font-semibold">Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Your message" {...field} />
+                <Textarea
+                  placeholder="Your message"
+                  {...field}
+                  className="h-32 px-4 rounded-md border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 resize-none"
+                />
               </FormControl>
-              <FormDescription>
-                Message must be between 10 and 500 characters
+              <FormDescription className="text-gray-600 dark:text-gray-400">
+                Message must be between 10 and 500 characters.
               </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit" className="gap-3 px-6 py-[1.4rem] text-md" disabled={isSubmitting}>
+        <Button
+          type="submit"
+          className="w-full h-14 gap-4 px-8 text-lg font-semibold flex items-center justify-center bg-purple-600 hover:bg-purple-700 transition-all"
+          disabled={isSubmitting}
+        >
           {isSubmitting ? (
             <>
               Sending...
               <svg
                 aria-hidden="true"
-                className="w-4 h-4 animate-spin fill-primary"
+                className="w-5 h-5 animate-spin fill-primary"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +147,7 @@ export const ContactForm = () => {
             </>
           ) : (
             <>
-              Send <PaperPlaneIcon />
+              Send <PaperPlaneIcon className="w-6 h-6" />
             </>
           )}
         </Button>

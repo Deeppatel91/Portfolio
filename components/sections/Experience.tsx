@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 export const Experience = () => {
   return (
     <section id="experience" className="container">
-      <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
-        Experience
+      <h1 className="text-5xl font-extrabold tracking-tight lg:text-5xl mb-14">
+        Experience & Education
       </h1>
 
       <ol className="relative border-s border-violet-100 dark:border-violet-900 space-y-14">
@@ -32,7 +32,10 @@ export const Experience = () => {
                 } mt-3 mb-5`}
               />
               <h2 className="text-xl font-semibold">{experience.title}</h2>
-              <h3>{experience.location}</h3>
+              <h3 className="text-lg font-medium">{experience.company}</h3>
+              <h4 className="text-md text-gray-600 dark:text-gray-400">
+                {experience.location}
+              </h4>
               <time className="mb-1 text-sm text-gray-600 dark:text-gray-400">
                 {experience.date}
               </time>
